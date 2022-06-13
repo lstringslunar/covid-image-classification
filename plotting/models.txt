@@ -1,0 +1,3 @@
+AlexNet
+GoogleNet
+ResNet18

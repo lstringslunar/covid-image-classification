@@ -1,0 +1,6 @@
+AlexNet
+GoogleNet
+VGG16
+VGG19
+ResNet18
+ResNet50
