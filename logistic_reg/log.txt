@@ -1,0 +1,48 @@
+x16 20000 max_iter = 3000
+                                         filename     class
+0                                  ARDSSevere.png  negative
+1  acute-respiratory-distress-syndrome-ards-1.jpg  negative
+2    acute-respiratory-distress-syndrome-ards.jpg  negative
+3          ards-secondary-to-tiger-snake-bite.png  negative
+4                 pneumocystis-pneumonia-2-PA.png  negative
+                                    filename     class
+0  MIDRC-RICORD-1C-419639-003251-46647-0.png  positive
+1  MIDRC-RICORD-1C-419639-001464-39871-0.png  positive
+2  MIDRC-RICORD-1C-419639-000918-78965-0.png  positive
+3  MIDRC-RICORD-1C-419639-003318-64285-0.png  positive
+4  MIDRC-RICORD-1C-419639-001015-81591-0.png  positive
+preparing training set...
+100%|███████████████████████████████████████████████████████████████████████████| 20000/20000 [02:31<00:00, 131.86it/s]
+preparing test set...
+100%|████████████████████████████████████████████████████████████████████████████████| 400/400 [00:13<00:00, 29.36it/s]
+106 76 119 99
+Accuracy = 0.455
+
+
+x64 20000 max_iter = 3000
+                                         filename     class
+0                                  ARDSSevere.png  negative
+1  acute-respiratory-distress-syndrome-ards-1.jpg  negative
+2    acute-respiratory-distress-syndrome-ards.jpg  negative
+3          ards-secondary-to-tiger-snake-bite.png  negative
+4                 pneumocystis-pneumonia-2-PA.png  negative
+                                    filename     class
+0  MIDRC-RICORD-1C-419639-003251-46647-0.png  positive
+1  MIDRC-RICORD-1C-419639-001464-39871-0.png  positive
+2  MIDRC-RICORD-1C-419639-000918-78965-0.png  positive
+3  MIDRC-RICORD-1C-419639-003318-64285-0.png  positive
+4  MIDRC-RICORD-1C-419639-001015-81591-0.png  positive
+preparing training set...
+100%|███████████████████████████████████████████████████████████████████████████| 20000/20000 [02:21<00:00, 141.33it/s]
+preparing test set...
+100%|████████████████████████████████████████████████████████████████████████████████| 400/400 [00:12<00:00, 31.56it/s]
+C:\Python\Python39\lib\site-packages\sklearn\linear_model\_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+75 112 83 130
+Accuracy = 0.468
