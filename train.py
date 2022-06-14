@@ -1,26 +1,20 @@
 from __future__ import print_function
 
-from datetime import datetime, time
-
-import numpy as np
-import random
 import argparse
+import os
+import random
+from random import sample
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torchvision import datasets, transforms
-from torch.optim.lr_scheduler import StepLR
-from torch.utils.data import Dataset, DataLoader
 from PIL import Image
+from torch.utils.data import Dataset, DataLoader
 from torchvision import models
-from torch.optim.lr_scheduler import ReduceLROnPlateau
-import antialiased_cnns
-
-import os
+from torchvision import transforms
 
 os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
-import sys
 
 
 def default_loader(path):
@@ -52,7 +46,7 @@ class COVID_Dataset(Dataset):
                 imgs.append((image_folder + words[0], 0))
 
         print(len(imgs))
-        from random import sample
+
         random.seed(12345)
         sample_imgs = sample(imgs, 1000)
         print(len(sample_imgs))
@@ -183,8 +177,6 @@ def main():
     # model = models.alexnet(pretrained=True)
     model = models.resnet50(pretrained=True)
     # print(model)
-    # model = models.alexnet(pretrained=True)
-    # model.fc = nn.Linear(2048, 2)
     model.fc = nn.Linear(2048, 2)
     model = model.to(device)
 
