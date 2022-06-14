@@ -1,0 +1,5 @@
+BatchSize=1
+BatchSize=2
+BatchSize=4
+BatchSize=8
+BatchSize=16

@@ -4,3 +4,4 @@ VGG16
 VGG19
 ResNet18
 ResNet50
+ResNet101

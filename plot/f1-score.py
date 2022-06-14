@@ -1,4 +1,4 @@
-path = 'accuracy-x64-30/vgg19.txt'
+path = 'x64-30ep/ensemble/2.txt'
 
 file = open(path, 'r', encoding='utf-8')
 text = file.read()
